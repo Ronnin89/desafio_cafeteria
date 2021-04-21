@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  drink: one
+  total: 1
+
+two:
+  drink: two
+  total: 1

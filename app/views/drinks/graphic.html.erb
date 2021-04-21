@@ -1,0 +1,29 @@
+<h2>Dashboard</h2>
+
+<h4>Graficos</h4>
+
+
+
+<div>
+  <div class="graph-months"><%= column_chart @sales_12_months, title: 'Ventas mensuales de los últimos 12 meses'%></div>
+  <div class="graph-months"><%= column_chart @quantity_12_months, title: 'Cantiad de ventas mensual de los últimos 12 meses'%></div>
+  <div class="graph-months"><%= column_chart @average_12_months, title: 'Promedio de venta mensual de los últimos 12 meses.'%></div>
+</div>
+
+<h2>Ventas por origen</h2>
+
+<div>
+  <div class="pie-chart-origin"><%= pie_chart @pie_chart_12_months, title: 'Los últimos 12 meses' %></div>
+  <div class="pie-chart-origin"><%= pie_chart @pie_chart_6_months, title: 'Los últimos 6 meses' %></div>
+  <div class="pie-chart-origin"><%= pie_chart @pie_chart_3_months, title: 'Los últimos 3 meses' %></div>
+  <div class="pie-chart-origin"><%= pie_chart @pie_chart_last_month, title: 'Último mes' %></div>
+</div>
+
+<h2>Ventas por blend name</h2>
+
+<div>
+  <div class="pie-chart-blend-name"><%= pie_chart @pie_chart_12_months_blend_name, title: 'Los últimos 12 meses' %></div>
+  <div class="pie-chart-blend-name"><%= pie_chart @pie_chart_6_months_blend_name, title: 'Los últimos 6 meses' %></div>
+  <div class="pie-chart-blend-name"><%= pie_chart @pie_chart_3_months_blend_name, title: 'Los últimos 3 meses' %></div>
+  <div class="pie-chart-blend-name"><%= pie_chart @pie_chart_last_month_blend_name, title: 'Último mes' %></div>
+</div>
